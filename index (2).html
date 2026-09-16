@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lea Wilson — AI Evaluation Portfolio</title>
+<meta name="description" content="AI evaluation portfolio. Eighteen years designing criteria and evaluating complex analytical, research, and creative work.">
+<style>
+  :root{
+    --bg:#fbfaf8; --surface:#ffffff; --ink:#1a1a1a; --muted:#5c5c5c;
+    --rule:#e2ddd6; --accent:#1f4e79; --accent-soft:#f0f4f8;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#141414; --surface:#1c1c1c; --ink:#eceae7; --muted:#a3a09c;
+           --rule:#2f2f2f; --accent:#8ab4de; --accent-soft:#1b242d; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:0 24px}
+  a{color:var(--accent)}
+  h1,h2,h3{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;font-weight:600;letter-spacing:-.01em}
+
+  header{border-bottom:1px solid var(--rule);padding:22px 0;margin-bottom:56px}
+  .bar{display:flex;flex-wrap:wrap;gap:16px;align-items:baseline;justify-content:space-between}
+  .name{font-family:Georgia,serif;font-size:19px;font-weight:600}
+  nav a{margin-left:20px;font-size:14px;color:var(--muted);text-decoration:none}
+  nav a:first-child{margin-left:0}
+  nav a:hover{color:var(--accent)}
+  @media(max-width:560px){nav a{margin:0 16px 0 0}}
+
+  .kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 18px}
+  h1{font-size:clamp(28px,5.5vw,42px);line-height:1.18;margin:0 0 22px;max-width:16ch}
+  .lede{font-size:18px;color:var(--ink);margin:0 0 28px;max-width:60ch}
+  .stat{border-left:3px solid var(--accent);padding:4px 0 4px 16px;color:var(--muted);font-size:15px;max-width:52ch}
+  .stat b{color:var(--ink);font-size:17px}
+
+  section{margin:64px 0}
+  h2{font-size:24px;margin:0 0 10px}
+  .sub{color:var(--muted);margin:0 0 28px;max-width:58ch}
+
+  .criteria{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+  .criteria div{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:18px 20px}
+  .criteria h3{font-size:15px;margin:0 0 6px}
+  .criteria p{margin:0;font-size:14.5px;color:var(--muted)}
+
+  .sample{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:26px 28px}
+  .sample h3{font-size:19px;margin:0 0 18px;line-height:1.35}
+  .task{background:var(--accent-soft);border-radius:6px;padding:14px 16px;font-size:14.5px;margin:0 0 24px}
+  .task b{display:block;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:5px;font-weight:600}
+  .finding{border-top:1px solid var(--rule);padding:16px 0}
+  .finding h4{margin:0 0 5px;font-size:15px;font-weight:600}
+  .finding p{margin:0;color:var(--muted);font-size:14.5px}
+  .verdict{border-top:2px solid var(--accent);margin-top:18px;padding-top:16px;font-size:15px}
+
+  .projects{display:grid;gap:22px}
+  .projects article{border-left:2px solid var(--rule);padding-left:20px}
+  .projects h3{font-size:16px;margin:0 0 6px}
+  .projects p{margin:0;color:var(--muted);font-size:14.5px}
+
+  ol.how{list-style:none;counter-reset:s;padding:0;margin:0;display:grid;gap:18px}
+  ol.how li{counter-increment:s;position:relative;padding-left:44px}
+  ol.how li::before{
+    content:counter(s);position:absolute;left:0;top:-1px;width:28px;height:28px;
+    border:1px solid var(--rule);border-radius:50%;display:grid;place-items:center;
+    font-size:13px;color:var(--accent);font-weight:600;background:var(--surface);
+  }
+  ol.how b{display:block;margin-bottom:3px}
+  ol.how span{color:var(--muted);font-size:14.5px}
+
+  footer{border-top:1px solid var(--rule);margin-top:72px;padding:36px 0 56px}
+  footer p{font-family:Georgia,serif;font-size:19px;margin:0 0 16px;max-width:24ch}
+  .links a{margin-right:22px;font-size:14.5px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <span class="name">Lea Wilson</span>
+    <nav>
+      <a href="#criteria">Evaluation criteria</a>
+      <a href="#sample">Worked sample</a>
+      <a href="#projects">Selected projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <p class="kicker">AI evaluation portfolio</p>
+  <h1>Clear judgment for answers that only look convincing.</h1>
+  <p class="lede">I evaluate generative-AI outputs for factual support, instruction adherence, reasoning quality, linguistic naturalness, personalization, and real-world usefulness.</p>
+  <p class="stat"><b>18 years</b> designing criteria and evaluating complex analytical, research, and creative work.</p>
+
+  <section id="criteria">
+    <h2>What I test</h2>
+    <p class="sub">A fluent answer is not necessarily a sound one. I make the judgment criteria explicit.</p>
+    <div class="criteria">
+      <div><h3>Factual support</h3><p>Do the sources and known facts actually support the answer's claims?</p></div>
+      <div><h3>Instruction adherence</h3><p>Did the response follow the stated task, constraints, format, and audience?</p></div>
+      <div><h3>Reasoning quality</h3><p>Does the conclusion follow from the evidence, or has the model smuggled in an assumption?</p></div>
+      <div><h3>Calibration</h3><p>Does confidence match the available evidence, uncertainty, and consequences of being wrong?</p></div>
+      <div><h3>Linguistic quality</h3><p>Is the writing clear and natural without synthetic phrasing, empty polish, or evasive abstraction?</p></div>
+      <div><h3>Underlying usefulness</h3><p>Does the answer solve the user's real problem rather than merely responding to the surface request?</p></div>
+    </div>
+  </section>
+
+  <section id="sample">
+    <h2>Worked evaluation sample</h2>
+    <p class="sub">Revenue forecast with impressive arithmetic and unsupported certainty</p>
+    <div class="sample">
+      <div class="task">
+        <b>Representative task</b>
+        A founder asks an AI system to estimate first-year revenue for a new subscription product using a market-size figure, an assumed conversion rate, and a monthly price.
+      </div>
+      <div class="finding">
+        <h4>Unsupported conversion assumption</h4>
+        <p>The calculation is internally consistent, but the response treats an invented conversion rate as established demand.</p>
+      </div>
+      <div class="finding">
+        <h4>False precision</h4>
+        <p>A single revenue number conceals uncertainty in acquisition, churn, pricing tolerance, and sales capacity.</p>
+      </div>
+      <div class="finding">
+        <h4>Missing decision context</h4>
+        <p>The user needs a validation plan and scenario range, not reassurance disguised as forecasting.</p>
+      </div>
+      <div class="finding">
+        <h4>Better response</h4>
+        <p>Separate known inputs from assumptions, show conservative/base/upside scenarios, identify the variables that drive the result, and recommend the cheapest test that could replace an assumption with evidence.</p>
+      </div>
+      <p class="verdict"><b>Verdict:</b> numerically tidy, evidentially weak. The correct intervention is calibration&mdash;not prettier prose.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Selected projects</h2>
+    <p class="sub">Selected work connecting evaluation, learning, and technical translation.</p>
+    <div class="projects">
+      <article>
+        <h3>Generative AI Output Evaluation Framework</h3>
+        <p>Structured criteria and prompt-based stress tests for detecting unsupported claims, hidden assumptions, contradictions, instruction failures, false confidence, and responses that remain polished while missing the real problem.</p>
+      </article>
+      <article>
+        <h3>Human Agency Record for AI-supported learning</h3>
+        <p>A framework for educators and learning-product teams to assess what a learner actually contributed when working with AI: intent, questioning, verification, rejection, transformation, understanding, and responsibility for the final result.</p>
+      </article>
+      <article>
+        <h3>CRX+ Innovations | Ghost Puck</h3>
+        <p>Founder-led product strategy and technical communication for a low-power edge-monitoring system spanning hardware, firmware, TinyML, telemetry, cloud architecture, operating constraints, and validation criteria.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="how">
+    <h2>How I work</h2>
+    <ol class="how">
+      <li><b>Clarify the task.</b><span>Identify the intended outcome, audience, constraints, and consequences of error.</span></li>
+      <li><b>Separate claim types.</b><span>Distinguish established fact, inference, interpretation, recommendation, and speculation.</span></li>
+      <li><b>Stress the answer.</b><span>Test edge cases, missing context, contradictory evidence, and places where fluency masks a gap.</span></li>
+      <li><b>Explain the judgment.</b><span>Record not only what failed, but why it failed and what a stronger response must do.</span></li>
+      <li><b>Protect usefulness.</b><span>Preserve nuance while making the result clearer, more accurate, and more actionable.</span></li>
+    </ol>
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <p>Senior editorial judgment for complex AI evaluation.</p>
+    <div class="links">
+      <a href="mailto:leaawilson@gmail.com">leaawilson@gmail.com</a>
+      <a href="https://www.linkedin.com/in/leaa-wilson">LinkedIn</a>
+      <a href="https://longrecord.substack.com">The Long Record</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
